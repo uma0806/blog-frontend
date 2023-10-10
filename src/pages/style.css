@@ -1,0 +1,98 @@
+.container{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(29, 78, 216), rgb(59, 130, 246), rgb(147, 197, 253));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.topSection{
+    background-color: white;
+    padding: 2rem 5rem;
+    border-radius: 0.3rem;
+    width: min(90%, 475px);
+}
+.topSection > * {
+    margin: 1rem 0;
+}
+h3{
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.form input{
+    width: 100%;
+    margin: 0.5rem 0;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    background-color: rgb(229 231 235);
+    border-radius: 0.5rem;;
+}
+.container .submitBtn{
+    width:100%;
+    margin: 0.5rem 0;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(30, 64, 175);
+}
+
+.forgot{
+    text-align: end;
+}
+
+.or {
+    position: relative;
+}
+.or > p{
+    bottom: -100%;
+    right: 50%;
+    transform: translate(50%, 40%);
+    position: absolute;
+    background-color: white;
+    padding: 0 1rem;
+}
+.oauth {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.oauth button {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    height: 3rem;
+    padding-right: 1rem;
+    padding-left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.oauth button:hover{
+    background-color: #eee;
+}
+
+.oauth button svg{
+    scale: 0.4;
+}
+
+.msg{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+.err{
+    background-color: rgb(255, 185, 185);
+    border: 1px solid red;
+    color: red;
+}
+.succ {
+    background-color: rgb(198, 255, 198);
+    border: 1px solid green;
+    color: green;
+}
