@@ -12,7 +12,7 @@ function Login() {
     const handleLogin = async () => {
         setMessage(null)
         try {
-            const {data} = await axios.post("http://localhost:5000/login", formData)
+            const {data} = await axios.post(`${import.meta.env.VITE_URL}/login`, formData)
             setMessage({msg: data.message, successs: true})
         } catch (error) {
             setMessage({msg: error.response.data.message, successs: false})
